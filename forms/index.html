@@ -1,3 +1,5 @@
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -6,7 +8,7 @@
 <body>
     <form>
         <label for="txtNome">Nome</label>
-        <input id="txtNome" type="text" placeholder="Insira o nome completo">
+        <input required id="txtNome" type="text" placeholder="Insira o nome completo">
         <br><br>
 
         <label for="txtSenha">Senha:</label>
@@ -14,7 +16,7 @@
         <br><br>
 
         <label for="txtDataNasc">Data de nascimento:</label>
-        <input id="txtSenha" type="date">
+        <input required id="txtSenha" type="date">
         <br><br>
 
         <label for="txtNro">Número:</label>
@@ -25,10 +27,11 @@
             <legend>Contato</legend>
             <label for="txtEmail">Email:</label>
             <input id="txtEmail" type="email" placeholder="exemplo@exemplo.com">
+            
             <br><br>
 
             <label for="txtSite">Site:</label>
-            <input id="txtSite" type="url" placeholder="http://www.exemplo.com">
+            <input required id="txtSite" type="url" placeholder="http://www.exemplo.com">
             <br><br>
         </fieldset>
         <br><br>
@@ -70,7 +73,10 @@
         <input id="soft4" type="checkbox">
         <label for="soft4">Lumion</label>
         <br>
-    
+        
+
+        <input type="submit" value="Enviar">  
+        <input type="reset" value="Limpar">
     </form>
 
 </body>
