@@ -1,0 +1,114 @@
+/* Configuração global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centralização, fundo e fonte */
+section {
+    width: 1200px;
+    margin: auto;
+    padding: 30px; 
+    background-color: rgb(243, 234, 216);
+}
+
+section p {
+    text-align: justify;
+    margin: 10px 0; 
+}
+
+body {
+    background-color:  rgb(243, 234, 216);
+    font-family: 'Helvetica', 'Arial', sans-serif; 
+    color: #333; 
+}
+
+/* Fontes */
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* Configuração header */
+header div {
+    background-color: rgb(134, 108, 90);
+    padding: 10px 0; 
+}
+
+header nav {
+    background-color: rgb(216, 133, 63);
+    list-style: none;
+}
+
+header ul {
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 30px; 
+    padding-top: 10px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header a:link, header a:visited {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 15px; 
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: rgb(223, 207, 153);
+    color: black;
+}
+
+/*Efeito zebrado*/
+main section:nth-of-type(even){
+    background-color: rgb(223, 207, 153);
+}
+main section:nth-of-type(odd){
+    background-color:  rgb(243, 234, 216);
+}
+
+/* Container Contato */
+.containerContato {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.containerContato > div {
+    width: 900px;
+    padding-top: 20px; 
+    margin: 0 auto;
+}
+.containerContato img{
+    width: 70px;
+    height: auto;
+}
+.containerContato p {
+    flex: 1;
+    text-align: justify;
+}
+.contato a{
+    text-decoration: none;
+}
+/*Configurar footer*/
+footer {
+    background-color: rgb(134, 108, 90);
+}
+footer p {
+    color: black;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+}

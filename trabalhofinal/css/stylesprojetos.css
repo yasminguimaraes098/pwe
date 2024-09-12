@@ -1,0 +1,135 @@
+/* Configuração global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centralização, fundo e fonte */
+section {
+    width: 1200px;
+    margin: auto;
+    padding: 30px; 
+    background-color: rgb(243, 234, 216);
+}
+
+section p {
+    text-align: justify;
+    margin: 10px 0; 
+}
+
+body {
+    background-color:  rgb(243, 234, 216);
+    font-family: 'Helvetica', 'Arial', sans-serif; 
+    color: #333; 
+}
+
+/* Fontes */
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* Configuração header */
+header div {
+    background-color: rgb(134, 108, 90);
+    padding: 10px 0; 
+}
+
+header nav {
+    background-color: rgb(216, 133, 63);
+    list-style: none;
+}
+
+header ul {
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 30px; 
+    padding-top: 10px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header a:link, header a:visited {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 15px; 
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: rgb(223, 207, 153);
+    color: black;
+}
+
+/*Efeito zebrado*/
+main section:nth-of-type(even){
+    background-color: rgb(223, 207, 153);
+}
+main section:nth-of-type(odd){
+    background-color:  rgb(243, 234, 216);
+}
+
+/* Container Home */
+.containerHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.containerHome > div {
+    width: 45%; 
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+/* Estilizando as imagens */
+.containerHome img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    display: block;
+    margin: auto;
+}
+
+/* Estilos específicos para as seções */
+.granfa img {
+    width: 100%; 
+}
+
+.finotti img {
+    width: 100%; 
+}
+
+.chacara img {
+    width: 100%; 
+}
+
+.granfa h1, .finotti h1, .chacara h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Estilo para o footer */
+footer {
+    background-color: rgb(134, 108, 90);
+    padding: 30px 0; 
+}
+
+footer p {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
